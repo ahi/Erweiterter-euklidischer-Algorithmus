@@ -1,6 +1,6 @@
 /* 
  * File:   main.cpp
- * Author: ahmet
+ * Author: s.ahmet.kiyak@gmail.com
  *
  * Created on 2. Februar 2013, 17:25
  */
