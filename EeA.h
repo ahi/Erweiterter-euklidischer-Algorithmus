@@ -13,23 +13,25 @@ extern "C" {
 #endif
 
     typedef struct t_step {
-        double k;
-        double q_k;
-        double r_k;
-        
-        double x_k;
-        double y_k;
+        int k;
+        int q_k;
+        int r_k;
+
+        int x_k;
+        int y_k;
+        struct t_step *prev;
+        struct t_step *next;
     } t_step;
 
-    typedef struct t_list {
-        t_step *data;
-        struct t_list *next;
-    } t_list;
-    
     typedef struct t_listHeader {
-        struct t_list *first;
-        struct t_list *last
+        struct t_step *first;
+        struct t_step *last;
     } t_listHeader;
+
+    t_listHeader* calculate(int a, int b);
+    t_listHeader* initList(int a, int b);
+    void append(t_listHeader *listHead, t_step *p);
+    t_step* getByK(t_listHeader *listHead, int k);
 #ifdef	__cplusplus
 }
 #endif
