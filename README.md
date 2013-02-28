@@ -1,4 +1,4 @@
 Erweiterter-euklidischer-Algorithmus
 ====================================
 
-Einfaches C Programm den Erweiterter euklidischer Algorithmus implementiert.  
+Einfaches C Programm der den Erweiterter euklidischer Algorithmus implementiert.
